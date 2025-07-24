@@ -48,7 +48,7 @@
 
 @keyframes prixClipFix {
   0% {
-    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
   }
 
   50% {
