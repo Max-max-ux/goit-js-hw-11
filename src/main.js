@@ -4,7 +4,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('.form');
-const input = form.elements['input'];
+const input = form.elements['search-text'];
 
 form.addEventListener('submit', async e => {
   e.preventDefault();
@@ -38,5 +38,6 @@ form.addEventListener('submit', async e => {
     });
   } finally {
     hideLoader();
+    form.reset();
   }
 });
