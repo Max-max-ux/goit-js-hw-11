@@ -15,8 +15,12 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: rotate 1s linear infinite;
+  z-index: 1000;
 }
 
 .loader::before,
@@ -26,7 +30,7 @@
   position: absolute;
   inset: 0px;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #4e75ff;
   animation: prixClipFix 2s linear infinite;
 }
 
@@ -38,11 +42,11 @@
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
